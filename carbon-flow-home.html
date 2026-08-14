@@ -6,150 +6,150 @@
 /* === TOKENS (Light) === */
 :root {
   /* Page */
-  --page-bg: #EAECE8;
+  --page-bg: #EBEDF0;
 
   /* Surfaces */
-  --bg: #F4F6F2;
+  --bg: #F5F7F8;
   --surface: #FFFFFF;
-  --surface-hover: #F0F3EE;
+  --surface-hover: #F0F3F4;
 
-  /* Text — Neutrals */
-  --text-1: #1C1F1E;
-  --text-2: #4A4F4C;
-  --text-3: #7A817C;
+  /* Text — Neutrals (slate-tinted, not generic grey) */
+  --text-1: #17202A;
+  --text-2: #4A5568;
+  --text-3: #7E8A98;
 
-  /* Primary Greens */
-  --green-deep: #0F3D2E;
-  --green-pine: #1F5D3A;
-  --green: #2E7D4F;
-  --sage: #7FA98B;
-  --moss: #B6CDB4;
-  --mint: #DFF1E6;
+  /* Primary Teal-Emerald */
+  --green-deep: #093A3E;
+  --green-pine: #127475;
+  --green: #0FA388;
+  --sage: #6EC6A8;
+  --moss: #A8DBC8;
+  --mint: #E0F4EC;
 
   /* Backward-compatible aliases */
-  --green-bg: #DFF1E6;
-  --green-dim: #1F5D3A;
+  --green-bg: #E0F4EC;
+  --green-dim: #127475;
 
-  /* Category Colors */
-  --transport: #0F3D2E;
-  --transport-bg: #D9E8E2;
-  --energy: #2E7D4F;
-  --energy-bg: #DFF1E6;
-  --food: #A8C76F;
-  --food-icon: #658B35;
-  --food-bg: #EFF5E0;
-  --shopping: #8B6B4A;
-  --shopping-bg: #EDE4D9;
+  /* Category Colors — four distinct hues */
+  --transport: #2B6CB0;
+  --transport-bg: #E3EEF9;
+  --energy: #D4892B;
+  --energy-bg: #FDF0DF;
+  --food: #7BAE4A;
+  --food-icon: #5A8C2E;
+  --food-bg: #EDF5E2;
+  --shopping: #9B5B8A;
+  --shopping-bg: #F3E4EF;
 
   /* Semantic */
-  --success: #2E7D4F;
+  --success: #0FA388;
   --info: #4C8FCE;
   --warning: #E2A93B;
   --error: #D35C4A;
 
   /* Buttons */
-  --btn-primary-bg: #1F5D3A;
+  --btn-primary-bg: #127475;
   --btn-primary-text: #FFFFFF;
   --btn-secondary-bg: #FFFFFF;
-  --btn-secondary-border: #1F5D3A;
-  --btn-secondary-text: #1F5D3A;
+  --btn-secondary-border: #127475;
+  --btn-secondary-text: #127475;
 
   /* UI Chrome */
-  --gauge-track: #D6DDDB;
-  --border: rgba(28,31,30,0.07);
-  --card-shadow: 0 1px 3px rgba(28,31,30,0.04), 0 1px 2px rgba(28,31,30,0.02);
-  --device-shadow: 0 24px 80px rgba(28,31,30,0.12), 0 0 0 1px rgba(28,31,30,0.05);
-  --nav-bg: rgba(255,255,255,0.85);
-  --nav-border: rgba(28,31,30,0.06);
-  --goal-track: #D6DDDB;
+  --gauge-track: #D4DAE0;
+  --border: rgba(23,32,42,0.07);
+  --card-shadow: 0 1px 3px rgba(23,32,42,0.05), 0 1px 2px rgba(23,32,42,0.03);
+  --device-shadow: 0 24px 80px rgba(23,32,42,0.14), 0 0 0 1px rgba(23,32,42,0.06);
+  --nav-bg: rgba(255,255,255,0.88);
+  --nav-border: rgba(23,32,42,0.06);
+  --goal-track: #D4DAE0;
   --dynamic-island: #000;
-  --status-color: #1C1F1E;
+  --status-color: #17202A;
 }
 
 /* === TOKENS (Dark — system) === */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --page-bg: #080A09;
-    --bg: #0E110F;
-    --surface: #1A1D1B;
-    --surface-hover: #222524;
-    --text-1: #E2E4E0;
-    --text-2: #8A8F8C;
-    --text-3: #5A5F5C;
-    --green-deep: #4A8A6E;
-    --green-pine: #5AAE8A;
-    --green: #5AAE8A;
-    --sage: #6B9E7D;
-    --moss: #4A7A5C;
-    --mint: #14291F;
-    --green-bg: #14291F;
-    --green-dim: #7BC4A2;
-    --transport: #5A9B7E;
-    --transport-bg: #152520;
-    --energy: #5AAE8A;
-    --energy-bg: #14291F;
-    --food: #C4D98F;
-    --food-icon: #C4D98F;
-    --food-bg: #1E2816;
-    --shopping: #B89470;
-    --shopping-bg: #221C15;
-    --gauge-track: #252825;
+    --page-bg: #080A0D;
+    --bg: #0E1216;
+    --surface: #1A1F25;
+    --surface-hover: #232930;
+    --text-1: #E2E6EA;
+    --text-2: #8A929C;
+    --text-3: #5A6470;
+    --green-deep: #4AADA2;
+    --green-pine: #52C4B0;
+    --green: #52C4B0;
+    --sage: #5AB0A0;
+    --moss: #3A7A6E;
+    --mint: #122826;
+    --green-bg: #122826;
+    --green-dim: #72D4C2;
+    --transport: #5A9FD4;
+    --transport-bg: #141E28;
+    --energy: #E8A855;
+    --energy-bg: #261E0E;
+    --food: #9CC86A;
+    --food-icon: #9CC86A;
+    --food-bg: #1A2514;
+    --shopping: #C48AB6;
+    --shopping-bg: #241A22;
+    --gauge-track: #252A30;
     --border: rgba(255,255,255,0.07);
-    --card-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.12);
-    --device-shadow: 0 24px 80px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
-    --nav-bg: rgba(26,29,27,0.88);
+    --card-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.15);
+    --device-shadow: 0 24px 80px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06);
+    --nav-bg: rgba(26,31,37,0.90);
     --nav-border: rgba(255,255,255,0.06);
-    --goal-track: #252825;
+    --goal-track: #252A30;
     --dynamic-island: #000;
-    --status-color: #E2E4E0;
-    --btn-primary-bg: #5AAE8A;
-    --btn-primary-text: #0E110F;
-    --btn-secondary-bg: #1A1D1B;
-    --btn-secondary-border: #5AAE8A;
-    --btn-secondary-text: #5AAE8A;
+    --status-color: #E2E6EA;
+    --btn-primary-bg: #52C4B0;
+    --btn-primary-text: #0E1216;
+    --btn-secondary-bg: #1A1F25;
+    --btn-secondary-border: #52C4B0;
+    --btn-secondary-text: #52C4B0;
   }
 }
 
 /* === TOKENS (Dark — explicit) === */
 :root[data-theme="dark"] {
-  --page-bg: #080A09;
-  --bg: #0E110F;
-  --surface: #1A1D1B;
-  --surface-hover: #222524;
-  --text-1: #E2E4E0;
-  --text-2: #8A8F8C;
-  --text-3: #5A5F5C;
-  --green-deep: #4A8A6E;
-  --green-pine: #5AAE8A;
-  --green: #5AAE8A;
-  --sage: #6B9E7D;
-  --moss: #4A7A5C;
-  --mint: #14291F;
-  --green-bg: #14291F;
-  --green-dim: #7BC4A2;
-  --transport: #5A9B7E;
-  --transport-bg: #152520;
-  --energy: #5AAE8A;
-  --energy-bg: #14291F;
-  --food: #C4D98F;
-  --food-icon: #C4D98F;
-  --food-bg: #1E2816;
-  --shopping: #B89470;
-  --shopping-bg: #221C15;
-  --gauge-track: #252825;
+  --page-bg: #080A0D;
+  --bg: #0E1216;
+  --surface: #1A1F25;
+  --surface-hover: #232930;
+  --text-1: #E2E6EA;
+  --text-2: #8A929C;
+  --text-3: #5A6470;
+  --green-deep: #4AADA2;
+  --green-pine: #52C4B0;
+  --green: #52C4B0;
+  --sage: #5AB0A0;
+  --moss: #3A7A6E;
+  --mint: #122826;
+  --green-bg: #122826;
+  --green-dim: #72D4C2;
+  --transport: #5A9FD4;
+  --transport-bg: #141E28;
+  --energy: #E8A855;
+  --energy-bg: #261E0E;
+  --food: #9CC86A;
+  --food-icon: #9CC86A;
+  --food-bg: #1A2514;
+  --shopping: #C48AB6;
+  --shopping-bg: #241A22;
+  --gauge-track: #252A30;
   --border: rgba(255,255,255,0.07);
-  --card-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.12);
-  --device-shadow: 0 24px 80px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
-  --nav-bg: rgba(26,29,27,0.88);
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.25), 0 1px 2px rgba(0,0,0,0.15);
+  --device-shadow: 0 24px 80px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06);
+  --nav-bg: rgba(26,31,37,0.90);
   --nav-border: rgba(255,255,255,0.06);
-  --goal-track: #252825;
+  --goal-track: #252A30;
   --dynamic-island: #000;
-  --status-color: #E2E4E0;
-  --btn-primary-bg: #5AAE8A;
-  --btn-primary-text: #0E110F;
-  --btn-secondary-bg: #1A1D1B;
-  --btn-secondary-border: #5AAE8A;
-  --btn-secondary-text: #5AAE8A;
+  --status-color: #E2E6EA;
+  --btn-primary-bg: #52C4B0;
+  --btn-primary-text: #0E1216;
+  --btn-secondary-bg: #1A1F25;
+  --btn-secondary-border: #52C4B0;
+  --btn-secondary-text: #52C4B0;
 }
 
 /* === PAGE === */
