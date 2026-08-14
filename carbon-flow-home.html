@@ -663,12 +663,7 @@ body {
         <div class="score-card">
           <div class="gauge-wrap">
             <svg class="gauge-svg" viewBox="0 0 180 180" width="172" height="172">
-              <defs>
-                <linearGradient id="gGrad" x1="0.2" y1="0.8" x2="0.9" y2="0.1">
-                  <stop offset="0%" stop-color="var(--green-deep)"/>
-                  <stop offset="100%" stop-color="var(--green)"/>
-                </linearGradient>
-              </defs>
+              <defs></defs>
               <!-- Track -->
               <circle cx="90" cy="90" r="72"
                 fill="none" stroke="var(--gauge-track)" stroke-width="14"
@@ -676,7 +671,7 @@ body {
                 transform="rotate(135 90 90)"/>
               <!-- Value arc -->
               <circle cx="90" cy="90" r="72"
-                fill="none" stroke="url(#gGrad)" stroke-width="14"
+                fill="none" stroke="var(--green)" stroke-width="14"
                 stroke-dasharray="203.57 452.39" stroke-linecap="round"
                 transform="rotate(135 90 90)"
                 class="gauge-arc"/>
