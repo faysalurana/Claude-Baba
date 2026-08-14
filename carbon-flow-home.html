@@ -5,97 +5,151 @@
 
 /* === TOKENS (Light) === */
 :root {
-  --page-bg: #EDECEA;
-  --bg: #F5F3EF;
+  /* Page */
+  --page-bg: #EAECE8;
+
+  /* Surfaces */
+  --bg: #F4F6F2;
   --surface: #FFFFFF;
-  --surface-hover: #F8F7F4;
-  --text-1: #1A1D1F;
-  --text-2: #6B7075;
-  --text-3: #9EA2A6;
-  --green: #3B8C6E;
-  --green-bg: #E4EFEA;
-  --green-dim: #2D6B54;
-  --gold: #B8922E;
-  --gold-bg: #F2EBDA;
-  --blue: #4D7F96;
-  --blue-bg: #DFE9EF;
-  --coral: #BF5F45;
-  --coral-bg: #F1DFD8;
-  --slate: #7B838F;
-  --slate-bg: #E6E8EB;
-  --gauge-track: #E5E3DE;
-  --border: rgba(26,29,31,0.07);
-  --card-shadow: 0 1px 3px rgba(26,29,31,0.04), 0 1px 2px rgba(26,29,31,0.02);
-  --device-shadow: 0 24px 80px rgba(26,29,31,0.12), 0 0 0 1px rgba(26,29,31,0.05);
-  --nav-bg: rgba(255,255,255,0.82);
-  --nav-border: rgba(26,29,31,0.06);
-  --goal-track: #E5E3DE;
+  --surface-hover: #F0F3EE;
+
+  /* Text — Neutrals */
+  --text-1: #1C1F1E;
+  --text-2: #4A4F4C;
+  --text-3: #7A817C;
+
+  /* Primary Greens */
+  --green-deep: #0F3D2E;
+  --green-pine: #1F5D3A;
+  --green: #2E7D4F;
+  --sage: #7FA98B;
+  --moss: #B6CDB4;
+  --mint: #DFF1E6;
+
+  /* Backward-compatible aliases */
+  --green-bg: #DFF1E6;
+  --green-dim: #1F5D3A;
+
+  /* Category Colors */
+  --transport: #0F3D2E;
+  --transport-bg: #D9E8E2;
+  --energy: #2E7D4F;
+  --energy-bg: #DFF1E6;
+  --food: #A8C76F;
+  --food-icon: #658B35;
+  --food-bg: #EFF5E0;
+  --shopping: #8B6B4A;
+  --shopping-bg: #EDE4D9;
+
+  /* Semantic */
+  --success: #2E7D4F;
+  --info: #4C8FCE;
+  --warning: #E2A93B;
+  --error: #D35C4A;
+
+  /* Buttons */
+  --btn-primary-bg: #1F5D3A;
+  --btn-primary-text: #FFFFFF;
+  --btn-secondary-bg: #FFFFFF;
+  --btn-secondary-border: #1F5D3A;
+  --btn-secondary-text: #1F5D3A;
+
+  /* UI Chrome */
+  --gauge-track: #D6DDDB;
+  --border: rgba(28,31,30,0.07);
+  --card-shadow: 0 1px 3px rgba(28,31,30,0.04), 0 1px 2px rgba(28,31,30,0.02);
+  --device-shadow: 0 24px 80px rgba(28,31,30,0.12), 0 0 0 1px rgba(28,31,30,0.05);
+  --nav-bg: rgba(255,255,255,0.85);
+  --nav-border: rgba(28,31,30,0.06);
+  --goal-track: #D6DDDB;
   --dynamic-island: #000;
-  --status-color: #1A1D1F;
+  --status-color: #1C1F1E;
 }
 
 /* === TOKENS (Dark — system) === */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --page-bg: #080A09;
-    --bg: #111413;
-    --surface: #1C1F1E;
-    --surface-hover: #232625;
-    --text-1: #E4E2DE;
-    --text-2: #888C90;
-    --text-3: #585C60;
+    --bg: #0E110F;
+    --surface: #1A1D1B;
+    --surface-hover: #222524;
+    --text-1: #E2E4E0;
+    --text-2: #8A8F8C;
+    --text-3: #5A5F5C;
+    --green-deep: #4A8A6E;
+    --green-pine: #5AAE8A;
     --green: #5AAE8A;
+    --sage: #6B9E7D;
+    --moss: #4A7A5C;
+    --mint: #14291F;
     --green-bg: #14291F;
     --green-dim: #7BC4A2;
-    --gold: #D4B05E;
-    --gold-bg: #272015;
-    --blue: #6FA3BA;
-    --blue-bg: #14222D;
-    --coral: #D47A60;
-    --coral-bg: #271A15;
-    --slate: #8F97A3;
-    --slate-bg: #1C1E22;
-    --gauge-track: #272A28;
+    --transport: #5A9B7E;
+    --transport-bg: #152520;
+    --energy: #5AAE8A;
+    --energy-bg: #14291F;
+    --food: #C4D98F;
+    --food-icon: #C4D98F;
+    --food-bg: #1E2816;
+    --shopping: #B89470;
+    --shopping-bg: #221C15;
+    --gauge-track: #252825;
     --border: rgba(255,255,255,0.07);
     --card-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.12);
     --device-shadow: 0 24px 80px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
-    --nav-bg: rgba(28,31,30,0.88);
+    --nav-bg: rgba(26,29,27,0.88);
     --nav-border: rgba(255,255,255,0.06);
-    --goal-track: #272A28;
+    --goal-track: #252825;
     --dynamic-island: #000;
-    --status-color: #E4E2DE;
+    --status-color: #E2E4E0;
+    --btn-primary-bg: #5AAE8A;
+    --btn-primary-text: #0E110F;
+    --btn-secondary-bg: #1A1D1B;
+    --btn-secondary-border: #5AAE8A;
+    --btn-secondary-text: #5AAE8A;
   }
 }
 
 /* === TOKENS (Dark — explicit) === */
 :root[data-theme="dark"] {
   --page-bg: #080A09;
-  --bg: #111413;
-  --surface: #1C1F1E;
-  --surface-hover: #232625;
-  --text-1: #E4E2DE;
-  --text-2: #888C90;
-  --text-3: #585C60;
+  --bg: #0E110F;
+  --surface: #1A1D1B;
+  --surface-hover: #222524;
+  --text-1: #E2E4E0;
+  --text-2: #8A8F8C;
+  --text-3: #5A5F5C;
+  --green-deep: #4A8A6E;
+  --green-pine: #5AAE8A;
   --green: #5AAE8A;
+  --sage: #6B9E7D;
+  --moss: #4A7A5C;
+  --mint: #14291F;
   --green-bg: #14291F;
   --green-dim: #7BC4A2;
-  --gold: #D4B05E;
-  --gold-bg: #272015;
-  --blue: #6FA3BA;
-  --blue-bg: #14222D;
-  --coral: #D47A60;
-  --coral-bg: #271A15;
-  --slate: #8F97A3;
-  --slate-bg: #1C1E22;
-  --gauge-track: #272A28;
+  --transport: #5A9B7E;
+  --transport-bg: #152520;
+  --energy: #5AAE8A;
+  --energy-bg: #14291F;
+  --food: #C4D98F;
+  --food-icon: #C4D98F;
+  --food-bg: #1E2816;
+  --shopping: #B89470;
+  --shopping-bg: #221C15;
+  --gauge-track: #252825;
   --border: rgba(255,255,255,0.07);
   --card-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.12);
   --device-shadow: 0 24px 80px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.06);
-  --nav-bg: rgba(28,31,30,0.88);
+  --nav-bg: rgba(26,29,27,0.88);
   --nav-border: rgba(255,255,255,0.06);
-  --goal-track: #272A28;
+  --goal-track: #252825;
   --dynamic-island: #000;
-  --status-color: #E4E2DE;
+  --status-color: #E2E4E0;
+  --btn-primary-bg: #5AAE8A;
+  --btn-primary-text: #0E110F;
+  --btn-secondary-bg: #1A1D1B;
+  --btn-secondary-border: #5AAE8A;
+  --btn-secondary-text: #5AAE8A;
 }
 
 /* === PAGE === */
@@ -185,7 +239,6 @@ body {
   align-items: center;
   padding: 12px 0 6px;
 }
-.hdr-text {}
 .greeting {
   font-size: 13px;
   color: var(--text-3);
@@ -203,7 +256,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: var(--green-bg);
+  background: var(--mint);
   color: var(--green);
   display: flex;
   align-items: center;
@@ -228,15 +281,18 @@ body {
   position: relative;
   margin-bottom: 4px;
 }
-.gauge-svg {
-  display: block;
-}
+.gauge-svg { display: block; }
 .gauge-center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -54%);
   text-align: center;
+}
+.gauge-leaf {
+  display: block;
+  margin: 0 auto 2px;
+  color: var(--sage);
 }
 .score-num {
   display: block;
@@ -266,15 +322,13 @@ body {
   gap: 5px;
   margin-top: 10px;
   padding: 5px 12px 5px 8px;
-  background: var(--green-bg);
+  background: var(--mint);
   color: var(--green);
   border-radius: 20px;
   font-size: 12.5px;
   font-weight: 600;
 }
-.score-change svg {
-  flex-shrink: 0;
-}
+.score-change svg { flex-shrink: 0; }
 
 /* === SECTION TITLE === */
 .section-lbl {
@@ -287,33 +341,33 @@ body {
 }
 
 /* === BREAKDOWN === */
-.breakdown {
-  margin-top: 22px;
-}
+.breakdown { margin-top: 22px; }
 .brk-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
 }
-.brk-item {}
 .brk-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .brk-label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
-.brk-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--cat-color);
+.brk-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
 }
+.brk-icon svg { display: block; }
 .brk-name {
   font-size: 14px;
   font-weight: 500;
@@ -334,15 +388,12 @@ body {
 }
 .brk-fill {
   height: 100%;
-  background: var(--cat-color);
   border-radius: 3px;
   transition: width 0.8s ease-out;
 }
 
 /* === ACTIONS === */
-.actions {
-  margin-top: 24px;
-}
+.actions { margin-top: 24px; }
 .act-list {
   display: flex;
   flex-direction: column;
@@ -369,8 +420,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  font-size: 18px;
 }
+.act-icon svg { display: block; }
 .act-body {
   flex: 1;
   min-width: 0;
@@ -391,20 +442,27 @@ body {
   color: var(--green);
 }
 .act-impact svg { flex-shrink: 0; }
+
+/* Buttons */
 .act-cta {
   flex-shrink: 0;
   padding: 6px 14px;
   border-radius: 8px;
-  background: var(--green-bg);
-  color: var(--green);
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
   font-size: 12px;
   font-weight: 600;
-  border: none;
+  border: 1.5px solid transparent;
   cursor: pointer;
-  transition: background 0.15s;
+  transition: filter 0.15s;
   font-family: inherit;
 }
-.act-cta:hover { filter: brightness(0.95); }
+.act-cta:hover { filter: brightness(1.1); }
+.act-cta-sec {
+  background: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+  border-color: var(--btn-secondary-border);
+}
 
 /* === GOAL === */
 .goal {
@@ -441,7 +499,7 @@ body {
 .goal-fill {
   height: 100%;
   border-radius: 4px;
-  background: linear-gradient(90deg, var(--green), var(--gold));
+  background: linear-gradient(90deg, var(--green-deep), var(--green));
   transition: width 1s ease-out;
 }
 .goal-sub {
@@ -522,9 +580,7 @@ body {
   from { width: 0; }
 }
 
-.gauge-arc {
-  animation: gaugeIn 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
-}
+.gauge-arc { animation: gaugeIn 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both; }
 .score-card { animation: fadeUp 0.5s ease-out 0.1s both; }
 .score-change { animation: chipBounce 0.5s ease-out 1.2s both; }
 .brk-fill { animation: barGrow 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both; }
@@ -533,26 +589,19 @@ body {
 .act-card:nth-child(3) { animation: fadeUp 0.4s ease-out 0.9s both; }
 .goal { animation: fadeUp 0.4s ease-out 1.0s both; }
 .goal-fill { animation: barGrow 1.2s cubic-bezier(0.22, 1, 0.36, 1) 1.2s both; }
-
 .gauge-dot {
   opacity: 0;
   animation: chipBounce 0.4s ease-out 1.5s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .gauge-arc,
-  .score-card,
-  .score-change,
-  .brk-fill,
-  .act-card,
-  .goal,
-  .goal-fill,
-  .gauge-dot {
+  .gauge-arc, .score-card, .score-change, .brk-fill,
+  .act-card, .goal, .goal-fill, .gauge-dot {
     animation: none !important;
   }
 }
 
-/* === RESPONSIVE (show phone at scale on small viewports) === */
+/* === RESPONSIVE === */
 @media (max-width: 430px) {
   .page { padding: 0; align-items: flex-start; }
   .device {
@@ -616,8 +665,8 @@ body {
             <svg class="gauge-svg" viewBox="0 0 180 180" width="172" height="172">
               <defs>
                 <linearGradient id="gGrad" x1="0.2" y1="0.8" x2="0.9" y2="0.1">
-                  <stop offset="0%" stop-color="var(--green)"/>
-                  <stop offset="100%" stop-color="var(--gold)"/>
+                  <stop offset="0%" stop-color="var(--green-deep)"/>
+                  <stop offset="100%" stop-color="var(--green)"/>
                 </linearGradient>
               </defs>
               <!-- Track -->
@@ -631,19 +680,26 @@ body {
                 stroke-dasharray="203.57 452.39" stroke-linecap="round"
                 transform="rotate(135 90 90)"
                 class="gauge-arc"/>
-              <!-- Endpoint dot -->
-              <circle cx="122.7" cy="25.8" r="9" fill="var(--gold)" opacity="0.18" class="gauge-dot"/>
-              <circle cx="122.7" cy="25.8" r="5" fill="var(--gold)" class="gauge-dot"/>
+              <!-- Endpoint glow + dot -->
+              <circle cx="122.7" cy="25.8" r="9" fill="var(--green)" opacity="0.15" class="gauge-dot"/>
+              <circle cx="122.7" cy="25.8" r="5" fill="var(--green)" class="gauge-dot"/>
             </svg>
             <div class="gauge-center">
+              <!-- Lucide: Leaf -->
+              <svg class="gauge-leaf" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 20 .5 20 .5s-4.4 4.5-2.4 10.2A7 7 0 0 1 11 20z"/>
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+              </svg>
               <span class="score-num">2.4</span>
               <span class="score-unit">t CO₂e</span>
             </div>
           </div>
           <p class="score-period">This month</p>
           <div class="score-change">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path d="M7 3v8M4 8l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Lucide: TrendingDown -->
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m22 17-8.5-8.5-4.5 4.5L2 6"/>
+              <path d="M16 17h6v-6"/>
             </svg>
             12% lower than last month
           </div>
@@ -653,58 +709,91 @@ body {
         <section class="breakdown">
           <h2 class="section-lbl">Where it comes from</h2>
           <div class="brk-list">
+
             <!-- Transport -->
-            <div class="brk-item" style="--cat-color: var(--coral)">
+            <div class="brk-item">
               <div class="brk-head">
                 <div class="brk-label">
-                  <span class="brk-dot" style="background: var(--coral)"></span>
+                  <span class="brk-icon" style="background:var(--transport-bg); color:var(--transport)">
+                    <!-- Lucide: Car -->
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M7 11l2-4h6l2 4"/>
+                      <path d="M5 11h14v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-5z"/>
+                      <circle cx="8" cy="18" r="1.5"/>
+                      <circle cx="16" cy="18" r="1.5"/>
+                    </svg>
+                  </span>
                   <span class="brk-name">Transport</span>
                 </div>
                 <span class="brk-val">0.91t</span>
               </div>
               <div class="brk-track">
-                <div class="brk-fill" style="width:100%; background:var(--coral)"></div>
+                <div class="brk-fill" style="width:100%; background:var(--transport)"></div>
               </div>
             </div>
+
             <!-- Energy -->
-            <div class="brk-item" style="--cat-color: var(--blue)">
+            <div class="brk-item">
               <div class="brk-head">
                 <div class="brk-label">
-                  <span class="brk-dot" style="background: var(--blue)"></span>
+                  <span class="brk-icon" style="background:var(--energy-bg); color:var(--energy)">
+                    <!-- Lucide: Zap -->
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M13 2 3 14h9l-1 8 10-12h-9z"/>
+                    </svg>
+                  </span>
                   <span class="brk-name">Energy</span>
                 </div>
                 <span class="brk-val">0.67t</span>
               </div>
               <div class="brk-track">
-                <div class="brk-fill" style="width:73.6%; background:var(--blue)"></div>
+                <div class="brk-fill" style="width:73.6%; background:var(--energy)"></div>
               </div>
             </div>
+
             <!-- Food -->
-            <div class="brk-item" style="--cat-color: var(--gold)">
+            <div class="brk-item">
               <div class="brk-head">
                 <div class="brk-label">
-                  <span class="brk-dot" style="background: var(--gold)"></span>
+                  <span class="brk-icon" style="background:var(--food-bg); color:var(--food-icon)">
+                    <!-- Lucide: Utensils -->
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                      <path d="M7 2v20"/>
+                      <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3"/>
+                      <path d="M18 22v-7"/>
+                    </svg>
+                  </span>
                   <span class="brk-name">Food</span>
                 </div>
                 <span class="brk-val">0.53t</span>
               </div>
               <div class="brk-track">
-                <div class="brk-fill" style="width:58.2%; background:var(--gold)"></div>
+                <div class="brk-fill" style="width:58.2%; background:var(--food)"></div>
               </div>
             </div>
+
             <!-- Shopping -->
-            <div class="brk-item" style="--cat-color: var(--slate)">
+            <div class="brk-item">
               <div class="brk-head">
                 <div class="brk-label">
-                  <span class="brk-dot" style="background: var(--slate)"></span>
+                  <span class="brk-icon" style="background:var(--shopping-bg); color:var(--shopping)">
+                    <!-- Lucide: ShoppingBag -->
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                      <path d="M3 6h18"/>
+                      <path d="M16 10a4 4 0 0 1-8 0"/>
+                    </svg>
+                  </span>
                   <span class="brk-name">Shopping</span>
                 </div>
                 <span class="brk-val">0.29t</span>
               </div>
               <div class="brk-track">
-                <div class="brk-fill" style="width:31.9%; background:var(--slate)"></div>
+                <div class="brk-fill" style="width:31.9%; background:var(--shopping)"></div>
               </div>
             </div>
+
           </div>
         </section>
 
@@ -712,73 +801,81 @@ body {
         <section class="actions">
           <h2 class="section-lbl">Reduce your impact</h2>
           <div class="act-list">
-            <!-- Action 1 -->
+
+            <!-- Action 1: Public transport -->
             <div class="act-card">
-              <div class="act-icon" style="background:var(--coral-bg); color:var(--coral)">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="5" width="14" height="9" rx="2"/>
-                  <line x1="3" y1="9.5" x2="17" y2="9.5"/>
-                  <circle cx="7" cy="16" r="1.3"/>
-                  <circle cx="13" cy="16" r="1.3"/>
-                  <line x1="5.5" y1="14" x2="5.5" y2="16"/>
-                  <line x1="14.5" y1="14" x2="14.5" y2="16"/>
+              <div class="act-icon" style="background:var(--mint); color:var(--green-pine)">
+                <!-- Lucide: Bus -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="3" width="16" height="14" rx="3"/>
+                  <path d="M2 12h20"/>
+                  <path d="M9 3v7"/>
+                  <path d="M15 3v7"/>
+                  <circle cx="7.5" cy="19.5" r="1.5"/>
+                  <circle cx="16.5" cy="19.5" r="1.5"/>
+                  <path d="M5.5 17v2"/>
+                  <path d="M18.5 17v2"/>
                 </svg>
               </div>
               <div class="act-body">
                 <p class="act-title">Use public transport twice this week</p>
                 <p class="act-impact">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M6 1.5C4 1.5 2.5 3 2.5 4.5c0 2.5 3.5 6 3.5 6s3.5-3.5 3.5-6C9.5 3 8 1.5 6 1.5z" fill="currentColor" opacity="0.25"/>
-                    <path d="M6 1.5C4 1.5 2.5 3 2.5 4.5c0 2.5 3.5 6 3.5 6s3.5-3.5 3.5-6C9.5 3 8 1.5 6 1.5z" stroke="currentColor" stroke-width="1"/>
+                  <!-- Lucide: Leaf (small) -->
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 20 .5 20 .5s-4.4 4.5-2.4 10.2A7 7 0 0 1 11 20z"/>
                   </svg>
                   Save 4.2 kg CO₂e
                 </p>
               </div>
               <button class="act-cta" aria-label="Log this action">Log it</button>
             </div>
-            <!-- Action 2 -->
+
+            <!-- Action 2: Reduce AC -->
             <div class="act-card">
-              <div class="act-icon" style="background:var(--blue-bg); color:var(--blue)">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M10 3v14"/>
-                  <path d="M6 7l4-4 4 4"/>
-                  <path d="M5 13a5 5 0 0010 0"/>
-                  <circle cx="10" cy="3" r="1" fill="currentColor" stroke="none"/>
+              <div class="act-icon" style="background:var(--energy-bg); color:var(--green)">
+                <!-- Lucide: Snowflake -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12h20"/>
+                  <path d="M12 2v20"/>
+                  <path d="m20 16-4-4 4-4"/>
+                  <path d="m4 8 4 4-4 4"/>
+                  <path d="m16 4-4 4-4-4"/>
+                  <path d="m8 20 4-4 4 4"/>
                 </svg>
               </div>
               <div class="act-body">
                 <p class="act-title">Reduce AC usage by 1 hour/day</p>
                 <p class="act-impact">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M6 1.5C4 1.5 2.5 3 2.5 4.5c0 2.5 3.5 6 3.5 6s3.5-3.5 3.5-6C9.5 3 8 1.5 6 1.5z" fill="currentColor" opacity="0.25"/>
-                    <path d="M6 1.5C4 1.5 2.5 3 2.5 4.5c0 2.5 3.5 6 3.5 6s3.5-3.5 3.5-6C9.5 3 8 1.5 6 1.5z" stroke="currentColor" stroke-width="1"/>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 20 .5 20 .5s-4.4 4.5-2.4 10.2A7 7 0 0 1 11 20z"/>
                   </svg>
                   Save 3.1 kg CO₂e
                 </p>
               </div>
-              <button class="act-cta" aria-label="Start this action">Start</button>
+              <button class="act-cta act-cta-sec" aria-label="Start this action">Start</button>
             </div>
-            <!-- Action 3 -->
+
+            <!-- Action 3: Plant-based meal -->
             <div class="act-card">
-              <div class="act-icon" style="background:var(--gold-bg); color:var(--gold)">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M10 3c-2 2-4 4-4 7a4 4 0 008 0c0-3-2-5-4-7z"/>
-                  <path d="M10 13v2"/>
-                  <path d="M8.5 12l1.5 1 1.5-1"/>
+              <div class="act-icon" style="background:var(--food-bg); color:var(--food-icon)">
+                <!-- Lucide: Leaf -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 20 .5 20 .5s-4.4 4.5-2.4 10.2A7 7 0 0 1 11 20z"/>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
                 </svg>
               </div>
               <div class="act-body">
                 <p class="act-title">Choose a plant-based meal today</p>
                 <p class="act-impact">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                    <path d="M6 1.5C4 1.5 2.5 3 2.5 4.5c0 2.5 3.5 6 3.5 6s3.5-3.5 3.5-6C9.5 3 8 1.5 6 1.5z" fill="currentColor" opacity="0.25"/>
-                    <path d="M6 1.5C4 1.5 2.5 3 2.5 4.5c0 2.5 3.5 6 3.5 6s3.5-3.5 3.5-6C9.5 3 8 1.5 6 1.5z" stroke="currentColor" stroke-width="1"/>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 20 .5 20 .5s-4.4 4.5-2.4 10.2A7 7 0 0 1 11 20z"/>
                   </svg>
                   Save 2.8 kg CO₂e
                 </p>
               </div>
               <button class="act-cta" aria-label="Log this action">Log it</button>
             </div>
+
           </div>
         </section>
 
@@ -801,36 +898,39 @@ body {
       </div>
     </div>
 
-    <!-- Bottom navigation -->
+    <!-- Bottom navigation — Lucide icons -->
     <nav class="bottom-nav" aria-label="App navigation">
+      <!-- Home: Lucide House -->
       <a class="nav-item active" aria-current="page">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-          <path d="M3 9.5L11 3l8 6.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M5 8.5v8.5a1.5 1.5 0 001.5 1.5h3v-4.5h3v4.5h3a1.5 1.5 0 001.5-1.5V8.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
+          <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
         </svg>
         <span class="nav-lbl">Home</span>
       </a>
+      <!-- Insights: Lucide ChartNoAxesColumn -->
       <a class="nav-item">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
-          <path d="M4 17V9"/>
-          <path d="M9 17V5"/>
-          <path d="M14 17v-5"/>
-          <path d="M19 17V7"/>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="M18 20V10"/>
+          <path d="M12 20V4"/>
+          <path d="M6 20v-6"/>
         </svg>
         <span class="nav-lbl">Insights</span>
       </a>
+      <!-- Actions: Lucide Target -->
       <a class="nav-item">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/>
-          <circle cx="11" cy="11" r="4"/>
-          <circle cx="11" cy="11" r="1" fill="currentColor" stroke="none"/>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <circle cx="12" cy="12" r="6"/>
+          <circle cx="12" cy="12" r="2"/>
         </svg>
         <span class="nav-lbl">Actions</span>
       </a>
+      <!-- Profile: Lucide UserRound -->
       <a class="nav-item">
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="8" r="3.5"/>
-          <path d="M4 19c0-3.5 3-6 7-6s7 2.5 7 6"/>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="8" r="5"/>
+          <path d="M20 21a8 8 0 0 0-16 0"/>
         </svg>
         <span class="nav-lbl">Profile</span>
       </a>
